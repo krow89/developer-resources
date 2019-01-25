@@ -109,7 +109,7 @@ var UI= {
         <li>\
             <a href="#sub_{subsection_id}">{subsection_title}</a>\
         </li>'
-        var sections= this._idata.get_sections(Data)
+        var sections= this._idata.get_sections()
         var html= sections.map(function(section){
             var section_data= this._idata.get_section_data(section)
             var subsections= this._idata.get_subsections(section)
@@ -148,7 +148,7 @@ var UI= {
         html+= links.map( function(clink){
             return StringUtils.format(item_template, {
                 title:clink.title,
-                desc:clink.desc,
+                desc:clink.desc || '',
                 url:clink.url})
         }, this).join("")
         return html+"</ul>"
@@ -164,10 +164,10 @@ var UI= {
         var subsection_code= subsections.map(function(subsection){
             var sub_data= this._idata.get_subsection_data(subsection)
             return StringUtils.format(html,{
-                title: sub_data.title,
-                desc: sub_data.desc,
-                subs_code: this._generate_dom_links(sub_data.links),
-                sub_name: sub_data.id
+                title: subsection.title,
+                desc: subsection.desc || '',
+                subs_code: this._generate_dom_links(sub_data),
+                sub_name: subsection.id
             })
         }, this).join("")
         return subsection_code
@@ -207,7 +207,7 @@ var UI= {
         this._load_nav()
         this._fix_position()
         var html= ""
-        var sections= idata.get_sections(Data)
+        var sections= idata.get_sections()
         var html= sections.map( function(section){
             return this._generate_dom_section(section)
         },this).join("")
