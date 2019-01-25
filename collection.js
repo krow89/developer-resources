@@ -631,11 +631,11 @@ function get_resources_map() {
 						title : "CodeChef Beginner Start",
 						url : "https://www.codechef.com/getting-started"
 					}, {
-						title : "{title:GitHub} awesome-courses",
+						title : "[GitHub] awesome-courses",
 						desc : "A list of CS course on WWW",
 						url : "https://github.com/prakhar1989/awesome-courses/blob/master/README.md"
 					}, {
-						title : "{title:GitHub} Guides in a variety of domains",
+						title : "[GitHub] Guides in a variety of domains",
 						url : "https://github.com/P1xt/p1xt-guides/"
 					}
 				]
