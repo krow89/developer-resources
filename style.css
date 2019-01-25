@@ -224,6 +224,7 @@ body{
             margin:-10px;
             font-family: Verdana, "Times New Roman";
             font-weight: bold;
+            font-size: 80%;
             background-image:linear-gradient(rgba(255,255,255,.45) 15%, transparent 20%, rgba(255,255,255,.15) 80%, transparent 85%, rgba(0,0,0,.3) 90% );
             position:relative;
             z-index:1;
