@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Programmer Links</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Kodchasan|Arvo" rel="stylesheet"> 
+        <script>
+/*
+    format of links: [title, description, url] and all are MANDATORY (though its empty)
+*/
+
+var Data= {}
+Data.general= { title: "GENERAL" }
+/* Discussions & Tutorials */
+Data.general.groups_and_tuts= { title:"Discussions & Tutorials",  desc:'List of sites where are forums, articles and tutorials about programming', links:[
+    ["SoloLearn","I really have to describe it? Well, now you're using it","http://www.sololearn.com"],
+    ["StackOverflow","You ask, they answer. Simple, but remember that it is very likely that an answer has already been given ... just look for it","https://stackoverflow.com/"],
+    ["CodeProject","Another famous site full of articles and tutorials","https://www.codeproject.com/"],
+    ["Jenkov.com","Tutorials here","http://tutorials.jenkov.com/"],
+    ["Guru99","Another site with many tutorials (thanks to CARLOS NAH user)", "https://guru99.com" ],
+    ["StudyTonight","","https://www.studytonight.com/"],
+    ['How Become a Developer','This will be useful at all users that ask common questions at begin of their jounery in programming','http://robwalling.com/assets/Software_by_Rob%20_How_to_Become_a%20_Programmer_1.0.pdf'],
+]}
+
+/* Computer Science */
+Data.general.cs= { title:'Computer Science', links:[
+    ["OSSU","A guide to self taugh a cs learning path","https://github.com/ossu/computer-science/blob/master/README.md"],
+    ["PC Architecture", "An online book on PC architecture", "http://www.karbosguide.com/books/pcarchitecture/start.htm"],
+    ["InformIT","Articles collection","https://www.informit.com/"],
+    ["GeeksForGeeks","A really nice portal on CS","https://www.geeksforgeeks.org/"],
+    ["Structure and Interpretation of Computer Programs, 2nd","Online Book","http://mitpress.mit.edu/sites/default/files/sicp/index.html"],
+    ["How Computers Work","An online tutorial","http://www.fastchip.net/howcomputerswork/p1.html"],
+    ["Operating Systems and Middleware: Supporting Controlled Interaction","Online ebook","https://gustavus.edu/mcs/max/os-book/"],
+    ['A short introduction to operating systems','','http://markburgess.org/os/os.html'],
+    ['Computer Science from the Bottom Up','','http://www.bottomupcs.com/'],
+    ['CS Unplugged','A free ebook (with some activities) on CS for childs','https://classic.csunplugged.org/books/'],
+    ['The Elements of Computing Systems: Building a Modern Computer from First Principles','An good book about computing system','http://www1.idc.ac.il/tecs/plan.html'],
+    ['CS for All','An online book that give an good overview of CS field with particular emphasis on programming','https://www.cs.hmc.edu/csforall/'],
+    ['A Short Introuction to Operating Systems','','http://markburgess.org/os/os.pdf'],
+    
+]}
+
+/* Challenges & Competions & Practice */
+Data.general.challenges= { title:'Challenges,  Competitions & Practice', desc:'Links to sites or resources which we will be crazy', links:[
+    ["CodingGame","A site where learn and fun cross","https://www.codingame.com/"],
+    ["UVA Online Judge","Full of challenges","http://uva.onlinejudge.org"],
+    ["Sphere Online Judge","Another site full of challenges","http://www.spoj.com/"],
+    ["TopCoder","Challenges (not so easy) where you can earn also","https://www.topcoder.com/"],
+    ["CodeChef","","https://www.codechef.com"],
+    ["CodeForces","","http://codeforces.com"],
+    ["CodeWars","","https://www.codewars.com/"],
+    ["HackerEarth","","https://www.hackerearth.com"],
+    ["URI Online Judge","","https://www.urionlinejudge.com.br"],
+    ["CodeFights", "(thanks to CARLOS NAH user)", "https://codefights.com"],
+    ['ProjectEuler','','https://projecteuler.net'],
+    ['Programmr','','http://www.programmr.com'],
+    [ 'CodesDope', 'Useful for practice (thanks to "Saurabh Tiwari" user)','https://www.codesdope.com'],
+    ['HackerRank','(thanks to "Infinity" user)','https://hackerrank.com'],
+    ['EdaBit','(thanks to "Sophia" user)','https://edabit.com/']
+]}
+
+Data.langs= { title: "LANGUAGES" }
+/* HTML, CSS & Javascript */
+Data.langs.html_css_js= {title:'HTML, CSS & Javascript', desc:'About WWW languages', links:[
+    ["Learn to Code HTML & CSS","A good site that contains two guides on the subject","https://learn.shayhowe.com/"],
+    ["CSS-Tricks","A site full of wondeful tricks","https://css-tricks.com/"],
+    ["W3Schools","Simple tutorials, reference and examples on web development","https://www.w3schools.com"],
+    ["MDN web docs","Mozilla web developments docs. Here you will find practically all that you are need for learn","https://developer.mozilla.org/en-US/"],
+    ['QuirksMode Javascript Guide','A very good guide','https://www.quirksmode.org/js/contents.html'],
+    ["Eloquent Javascript","Ebook","http://eloquentjavascript.net/Eloquent_JavaScript.pdf"],
+    ["Dive Into HTML5","Online book on HTML5","http://fortuito.us/diveintohtml5/"],
+    ["Smashing Magazine", "A nice site full of articles about web development and design", "https://www.smashingmagazine.com/"],
+    ['HTML Canvas Deep Dive','An online book on HTML graphics','http://joshy.org/books/canvasdeepdive/toc.html'],
+    ['Pro HTML5 Programming','Online book on programming with Web API', 'http://apress.jensimmons.com/v5/pro-html5-programming/ch0.html'],
+    ['JQuery Fundamentals','Online site for learn basic JS and JQuery','http://jqfundamentals.com/'],
+    ['Hacking with React','An online book an React Framework','http://www.hackingwithreact.com/'],
+    ['Google Web Developer','Web development from Google', 'https://developers.google.com/web/'],
+    ['DavidWalsh Blog','A blog with useful Web develoment posts','https://davidwalsh.name/'],
+    ['CSS Zen Garden','An site that demonstrate how its beautiful is layout with CSS','http://www.csszengarden.com'],
+    ['Web-Engineering','A good site where you can find some books/tutorials on Web Development','https://web-engineering.info/'],
+    ['Design for Performance','An online book that treat web devolopement subject from performance pont of view','http://designingforperformance.com/'],
+    ['Javascript.info','A good online tutorial about Javascript','https://javascript.info/'],
+    ['Learn CSS Layout: The Pedantic Way','A good online book that go into depth of box model and layouting','http://book.mixu.net/css/'],
+    ['100+ FREE Resources to Learn Full Stack Web Development','A very good list of resources for learn full stack web dev (thanks to @Danijel Ivanović user)','https://codeburst.io/100-free-resources-to-learn-full-stack-web-development-5b40e0bdf5f2'],
+    ['The Web Book: The ultimate beginner\'s guide to HTML, CSS, JavaScript, PHP and MySQL','','https://www.graphqual.com/download.php?file=Webbook.pdf'],
+    ['50 Free eBooks for Web Designers & Developers','(thanks to @Maz user)','https://speckyboy.com/free-web-design-ebooks/'],
+    
+]}
+
+/* C */
+Data.langs.clang= {title:'C', links:[
+    ["Learn-C","Learn C interactively","http://www.learn-c.org/"],
+    ["The C Book","","http://publications.gbdirect.co.uk/c_book/"],
+    ["The GNU C Programming Tutorial","","http://www.crasseux.com/books/ctut.pdf"],
+    ["Tricky C (italian language only)","An good old book on C","https://www.dmi.unict.it/diraimondo/web/wp-content/uploads/classes/so/mirror-stuff/Tricky_C.pdf"],
+    ["An Introuction to C Programming Language",'(thanks to @Maz user)','http://www-personal.acfr.usyd.edu.au/tbailey/ctext/ctext.pdf'],
+    ['C Programming Tutorial','(thanks to @Maz user)','http://markburgess.org/CTutorial/C-Tut-4.02.pdf'],
+]}
+
+/* C++ */
+Data.langs.cpp= {title:'C++', links:[
+    ['Language Reference (CPPReference.com)','The best source for get info about C/C++','https://en.cppreference.com/w/'],
+    ["Language reference (CPlusPus.com)",'',"http://www.cplusplus.com/reference/"],
+    ['C++ SuperFAQ','Really useful C++ overview','https://isocpp.org/wiki/faq'],
+    ["Thinking in C++ Vol.1", "A enlighten free online book","http://bruce-eckel.developpez.com/livres/cpp/ticpp/v1/"],
+    ["Thinking in C++ Vol.2","Second volume of previous book", "http://bruce-eckel.developpez.com/livres/cpp/ticpp/v2/"],
+    ["Advanced Programming in C++","Notes","http://www.cs.ukzn.ac.za/~hughm/ap/notes/apNotes.pdf"],
+    ["C++ GUI Programming With Qt 3","","http://www.computer-books.us/cpp_0010.php"],
+    ["LearnCPP","An useful site where learn C++","http://www.learncpp.com/"],
+    ['Optimizing software in C++ : An optimization guide for Windows, Linux and Mac platforms','','http://www.doc.ic.ac.uk/~ahanda/optimizing_cpp.pdf'],
+    ['The C Book','online book on C language','http://publications.gbdirect.co.uk/c_book/'],
+]}
+
+/* Assembly */
+Data.langs.assembly= {title:'Assembly', links:[
+    ['The Art of Assembly Language','(thanks to @Maz user)','http://www.ic.unicamp.br/~pannain/mc404/aulas/pdfs/Art%20Of%20Intel%20x86%20Assembly.pdf'],
+    ['Beginners Introduction to the Assembly Language of ATMEL AVR Microprocessors','(thanks to @Maz user)','http://www.avr-asm-download.de/beginner_en.pdf']
+]}
+
+/* Java */
+Data.langs.java= {title:'Java', links:[
+    ["The Java Tutorials","Official Java Tutorial","https://docs.oracle.com/javase/tutorial/"],
+    ["Thinking in Java 4th","Ebook","http://sd.blackball.lv/library/Thinking_in_Java_4th_edition.pdf"],
+    ["Java: The Legend","Ebook (need form compilation)","http://www.oreilly.com/programming/free/java-the-legend.csp"],
+    ['Introduction to Programming Using Java, 7th','', 'http://math.hws.edu/javanotes/'],
+    ['The Java Language Specifications, Java SE 7 Edition','','https://docs.oracle.com/javase/specs/jls/se7/jls7.pdf'],
+    ['The Java Virtual Machine Specifications, Java SE 7 Edition','','https://docs.oracle.com/javase/specs/jvms/se7/jvms7.pdf'],
+    
+]}
+
+/* Python */
+Data.langs.python= {title:'Python', links:[
+    ["Official site","","http://python.org"],
+    ["Think Python","Ebooks (for version 2 & 3)","http://greenteapress.com/wp/think-python/"],
+    ['Python Notes for Professionals','An free downloadable Python book','https://goalkicker.com/PythonBook/'],
+    ['Dive Into Python3','An online book on Python3','http://www.diveintopython3.net/'],
+    ['FullStackPython','An awesome site full of links about full stack Python programming','https://www.fullstackpython.com/table-of-contents.html'],
+]}
+
+/* Ruby */
+Data.langs.ruby= {title:'Ruby', links:[
+    ["Ruby Official site","Official site about Ruby (here you will find bynaries, docs etc)", "http://www.ruby-lang.org"],
+    ["Introduction to Programming with Ruby","(Thanks to Lord Krishna)","https://launchschool.com/books/ruby"],
+    ["OOP with Ruby","(Thanks to Lord Krishna)","https://launchschool.com/books/oo_ruby"],
+    ["Ruby Core Tools","(Thanks to Lord Krishna)" ,"https://launchschool.com/books/core_ruby_tools"],
+    ["Demystifying Rails","(Thanks to Lord Krishna)","https://launchschool.com/books/demystifying_rails"],
+    ["Learn Ruby the Hard Way","", "https://learnrubythehardway.org/book/"],
+    ["Learn to Program, 2nd","", "https://pine.fm/LearnToProgram/"],
+    ["Ruby Study Notes","","http://rubylearning.com/satishtalim/tutorial.html"],
+]}
+
+/* C# */
+Data.langs.csharp= {title:'C#', links:[
+    ["C# Essentials","","https://www.techotopia.com/index.php/C_Sharp_Essentials"],
+    ["Data Structures and Algorithms with Object-Oriented Design Patterns in C#","","https://web.archive.org/web/20161207142802/http://www.brpreiss.com:80/books/opus6/"],
+    ["Fundamentals of Computer Programming with C#","","http://www.introprogramming.info/english-intro-csharp-book/"]
+]}
+
+Data.others= {title:'SPECIFIC SUBJECTS'}
+/* Algorithms, Data Structures & Patterns */
+Data.others.alg_ds_patterns= {title:'Algorithms, Data Structures & Patterns', links:[
+    ["Algorithms, 4th Edition","An good online book on topic","https://algs4.cs.princeton.edu/home/"],
+    ["Learning Javascript Design Pattern","","https://addyosmani.com/resources/essentialjsdesignpatterns/book/"],
+    ["Javascript Algorithms And Data Structure",'Implementation of many Algorithns and DS in JS(thanks to @Danijel Ivanovic)','https://github.com/trekhleb/javascript-algorithms/blob/master/README.md' ],
+    ['Data Structures and Algorithms with Object-Oriented Design Patterns in Python','','https://web.archive.org/web/20161016153130/http://www.brpreiss.com/books/opus7/html/book.html'],
+    ['Algorithms Notes for Professionals','','https://goalkicker.com/AlgorithmsBook/'],
+    ['Data Structures and Algorithms The Basic Toolbox','','https://people.mpi-inf.mpg.de/~mehlhorn/Toolbox.html'],
+    ['Data Structures & Algorithm Analysis (C++ & Java version)','','http://people.cs.vt.edu/~shaffer/Book/' ],
+    ['Introduction to Design Analysis of Algorithms','','https://www.smashwords.com/books/view/365630'],
+    ['Matters Computational','','https://www.jjj.de/fxt/fxtpage.html#fxtbook'],
+    ['Open Data Structures','','http://opendatastructures.org/'],
+    ['Algorithms Notes by Jeff Erickson','','http://jeffe.cs.illinois.edu/teaching/algorithms/'],
+    ['An Introduction to the Analysis of Algorithms', '', 'http://aofa.cs.princeton.edu/home/'],
+    ['VisualGO','An online tool for learn data structures and algorithms','https://visualgo.net'],
+    ['Elementary Algorithms','','https://github.com/liuxinyu95/AlgoXY/releases/download/v0.618033/elementary-algorithms.pdf'],
+    ['Problem Solving with Algorithms and Data Structures using Python','','http://interactivepython.org/courselib/static/pythonds/index.html'],
+    ['Think Data Structures: Algorithms and Information Retrieval in Java','','http://greenteapress.com/thinkdast/html/index.html'],
+    
+]}
+
+/* OS Development */
+Data.others.os_dev= {title:'OS Development', links:[
+    ["OSDev","A site that has most articles on this rarely treated subject","https://wiki.osdev.org/Main_Page"],
+    ["The Little Book about OS Development","","http://littleosbook.github.io/"],
+    ['How to Make a Computer Operating System','Online book about how to write a very simple computer operating system in C/C++ from scratch','https://legacy.gitbook.com/book/samypesse/how-to-create-an-operating-system/details'],
+    ['Operating Systems: Three Easy Pieces','','http://pages.cs.wisc.edu/~remzi/OSTEP/'],
+]}
+
+/* Android Development */
+Data.others.android_dev= {title:'Android Development', links:[
+    ["Android Dev Docs","Official docs","https://developer.android.com/index.html"],
+    ["Android Studio Development Essentials, 6th","Online book","http://www.techotopia.com/index.php/Android_Studio_Development_Essentials_-_Android_6_Edition"],
+    ['Android Notes for Professionals','','https://goalkicker.com/AndroidBook/'],
+    ['Android Course by Google Team','Online couses on Android development by Google Team','https://developers.google.com/training/android/'],
+    ['Android on x86: An Introduction to Optimizing for Intel Architecture','','https://link.springer.com/book/10.1007%2F978-1-4302-6131-5'],
+    ["The Busy Coder's Guide to Android Development",'Old (but useful) free ebook on android programming (its one ebook with different versions)','https://commonsware.com/Android/4-2-free']
+]}
+
+/* AI */
+Data.others.ai= {title:'AI', links:[
+    ['Artificial Intelligence: Foundations of Computational Agents, 2nd', '', 'http://artint.info/2e/html/ArtInt2e.html'],
+    ['Clever Algorithms: Nature-Inspired Programming Recipes','','http://www.cleveralgorithms.com/nature-inspired/index.html']
+]}
+
+Data.game_dev= {title:'GAME DEVELOPMENT', desc:'About programming games'}
+/* General Game Development */
+Data.game_dev.gd_general= {title:'General', links:[
+    ["GameDev","One of the most popular site on topic","http://gamedev.net/"],
+    ["Killer Game Programming in Java","Online Book","http://fivedots.coe.psu.ac.th/~ad/jg/"],
+    ["Making Games with Python and Pygame","Ebook","https://inventwithpython.com/makinggames.pdf"],
+    ["GameProgrammingPatterns","A guide on some usefuls patterns in game programming", "http://gameprogrammingpatterns.com/"],
+    ['HTML 5 Shoot \'em Up in an Afternoon','An online guide on create an game in HTML','https://leanpub.com/html5shootemupinanafternoon']
+]}
+
+/* CG Programming */
+Data.game_dev.cg= {title:'CG', desc:'About Computer Graphics Programming', links:[
+    ["Graphics Programming Black Book","Ebook","http://www.drdobbs.com/parallel/graphics-programming-black-book/184404919"],
+    ["Learning Modern 3D Graphics Programming","Ebook","https://paroj.github.io/gltut/index.html"],
+    ["LearnOpenGL","A online (downloadable also) really good tutorial about OpenGL","https://learnopengl.com/"],
+    ['Computer Graphics from Scratch','','http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html' ],
+    ['GPU Gems','An online ebook full of articles on real-time graphics programming by NVidia','https://developer.nvidia.com/gpugems/GPUGems/gpugems_pref01.html'],
+    ['GPU Gems 2','Second title of previous','https://developer.nvidia.com/gpugems/GPUGems2/gpugems2_inside_front_cover.html'],
+    ['GPU Gems 3','Third title of previous','https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_pref01.html'],
+    ['Opengl-Tutorial','A web site-tutorial on OpenGL','http://www.opengl-tutorial.org/'],
+]}
+
+Data.networking= {title:'NETWORKING'}
+Data.networking.networking_general= {title:'General Networking', links:[
+    ['An Introduction to Computer Networks','Online book about networks','http://intronetworks.cs.luc.edu/'],
+    ['Computer Networking: Principles, Protocols and Practice','','http://cnp3book.info.ucl.ac.be/1st/html/index.html'],
+]}
+Data.networking.networking_protocols= {title:'Protocols', links:[
+    ['TCP/IP Tutorial and Technical Overview','','http://www.redbooks.ibm.com/abstracts/gg243376.html'],
+]}
+
+Data.math= {title:'MATHEMATICS'}
+
+/* Basic Math */
+Data.math.basic_math= {title:'Algebra, Geometry & Trigonometry', links:[
+    ["MathsIsFun","A site where learn basics","http://www.mathsisfun.com/index.htm"],
+    ["YourMath (italian language)","Like previous but only if you understand italian ;)","http://www.youmath.it/"],
+    ["Algebra: An Elementary Text-Book","An old two volumes book about algebra","http://onlinebooks.library.upenn.edu/webbin/book/lookupid?key=olbp36404"],
+    ['Algebra & Trigonometry ebooks by Stitz Zeager','','http://www.stitz-zeager.com/'],
+    ['CNX', 'An site based on open-learn concepts where you can find some free ebooks on math and related','https://cnx.org/']
+]}
+
+/* Calculus, Linear Algebra & Differential Equations */
+Data.math.calc_linalg_de= {title:'Calculus, Linear Algebra & Differential Equations', links:[
+    ["Calculus and Linear Algebra. Vol. 1: Vectors in the Plane and One-Variable Calculus","Online book","https://quod.lib.umich.edu/s/spobooks/5597602.0001.001"],
+    ["Calculus and Linear Algebra. Vol. 2: Vector Spaces, Many-Variable Calculus, and Differential Equations","Second volume of previous book","http://dx.doi.org/10.3998/spobooks.5597602.0002.001"],
+    ['Calculus by Gilbert Strang','','https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/textbook/'],
+    ['Calculus Made Easy (by Silvanus P. Thompson)','An old beautiful book for learn basic of calculus in easy way','http://www.gutenberg.org/ebooks/33283'],
+]}
+
+/* Other */
+Data.math.math_other= {title:'Other Math Fields', links:[
+    ['Probability and Statics book','','http://wiki.stat.ucla.edu/socr/index.php/Probability_and_statistics_EBook'],
+]}
+
+
+Data.security= {title:'SECURITY'}
+Data.security.security_general= { title:'General', links:[
+    ['Security Engineering','','http://www.cl.cam.ac.uk/%7Erja14/book.html']
+]}
+/* Cryptography */
+Data.security.cryptography= { title:'Cryptography', links:[
+    ['Crypto 101','An online introducctory course on cryptography','https://www.crypto101.io/'],
+    ['Handbook of Applied Cryptography','','http://cacr.uwaterloo.ca/hac/index.html'],
+]}
+
+Data.resources= {title:'RESOURCES', desc:'Links to other related lists'}
+/* Resource Lists */
+Data.resources.lists= {title:'Lists', desc:'Links to other related lists', links:[
+    ["EbookFoundation GitHub list","","https://github.com/EbookFoundation/free-programming-books"],
+    ["GoogleDrive (thanks to Argwings Mutuli)","Personal repository","https://drive.google.com/drive/u/0/folders/0B_gUVjwfsJNlN2NmckZxa0pqQTA"],
+    ["CodeChef Beginner Start","","https://www.codechef.com/getting-started"],
+    ["[GitHub] awesome-courses","A list of CS course on WWW","https://github.com/prakhar1989/awesome-courses/blob/master/README.md"] ,
+    ["[GitHub] Guides in a variety of domains","","https://github.com/P1xt/p1xt-guides/"],
+]}
+
+/* Online Libraries */
+Data.resources.www_libraries= {title:'Online Libraries', links:[
+    ['LibGen','(thanks to @Kinshuk Vasisht)','https://libgen.pw'],
+    ["LaunchSchool","Some good free ebooks", "https://launchschool.com/books"],
+    ["ScienceBooksOnline","Contains most free links to sciences related free ebooks","http://www.sciencebooksonline.info"],
+    ["PactPub","Most books are in discount","https://www.packtpub.com/"],
+    ["IT-Ebooks","","http://it-ebooks.info/"],
+    ["AllITEbooks","","http://www.allitebooks.com/"],
+    ["FreeComputerBooks","","http://www.freecomputerbooks.com/"],
+    ['FreeTechBooks','','http://www.freetechbooks.com'],
+    ["B-OK","","http://b-ok.org/"],
+    ["BookFi","Seem similar to B-OK","http://en.bookfi.net/"],
+    ["FreePDF-Books","","http://freepdf-books.com/"],
+    ["FoxEbook","","http://www.foxebook.net"],
+    ['GoalKicker','A series about downloadable notes/books on multiple languages','https://goalkicker.com/'],
+    ['Green Tea Press','Some free ebooks by Allen Downey','https://greenteapress.com/wp/'],
+]}
+
+/* Online courses */
+Data.resources.www_courses= {title:'Online Courses', links:[
+    ["edx","","https://www.edx.org/"],
+    ["Coursera","","https://www.coursera.org"],
+    ["MITOpenCourseware","","https://ocw.mit.edu"],
+    ["KhanAcademy","","https://www.khanacademy.org"],
+    [ "Progate","An online programming learning platform with some useful courses (thanks to CARLOS NAH user)","https://progate.com"],
+    ['FreeCodeCamp','','https://www.freecodecamp.com/'],
+    ['MITOpenCourseware','','https://ocw.mit.edu/index.htm'],
+]}
+
+/* Online tools */
+Data.resources.www_tools= {title:'Online Tools', links:[
+    ['DevDocs','Has many docs in on place','http://devdocs.io'],
+    ['StackBlitz','An online IDE for develop and share web apps powered by VS Code','https://stackblitz.com'],
+    ['CanIUse','Provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.','https://caniuse.com/'],
+    ['Expo.io','React Native on your browser (thanks @Burey)','https://snack.expo.io/']
+]}
+
+Data.mobile= {title:'MOBILE TOOLS', desc:'Her you will find apps for develop on your mobile device'}
+
+/* Ides & compilers */
+Data.mobile.ide_compilers= {title:'IDEs & Compilers', links:[
+    ['Java N-IDE', 'A wondeful IDE with Java support which allow you to create android apps on device (and its free)','https://play.google.com/store/apps/details?id=com.duy.compiler.javanide'],
+    ['AIDE','IDE on android. Create your apps on device','https://play.google.com/store/apps/details?id=com.aide.ui'],
+    ['Mobile C','C/C++ IDE with support to other language (Python, Lua and few others)','https://play.google.com/store/apps/details?id=com.dztall.ccr.android.admob'],
+    ['CppDroid','C/C++ IDE','https://play.google.com/store/apps/details?id=name.antonsmirnov.android.cppdroid'],
+    ['Cxxdroid','Another C++ IDE','https://play.google.com/store/apps/details?id=ru.iiec.cxxdroid'],
+    ['QPython','Python IDE and interpreter','https://play.google.com/store/apps/details?id=org.qpython.qpy'],
+    ['QLua','Lua on android','https://play.google.com/store/apps/details?id=com.quseit.qlua5pro2' ],
+    ['PyDroid','Another Python IDE (exists a Python 3 version also on market)','https://play.google.com/store/apps/details?id=ru.iiec.pydroid2'],
+    ['Pascal N-IDE','Pascal on your device','https://play.google.com/store/apps/details?id=com.duy.pascal.compiler'],
+    
+]}
+
+Data.mobile.editors= {title:'Text Editors', links:[
+    ['anWriter','A powerful editor with syntax highlight and much other features','https://play.google.com/store/apps/details?id=com.ansm.anwriter'],
+    ['QuickEdit Text Editor','Like previous, another powerful text editor','https://play.google.com/store/apps/details?id=com.rhmsoft.edit'],
+    ['DroidEdit','','https://play.google.com/store/apps/details?id=com.aor.droidedit'],
+    
+]}
+
+var DataHandler= {
+    get_sections: function(data){
+        var sections= []
+        var ret= null
+        for(var s in data){
+            sections.push(data[s])
+        }
+        return sections
+    },
+    get_section_data: function(section){
+        var ret= {}
+        ret.title= section.title || ""
+        ret.desc= section.desc || ""
+        return ret
+    },
+    get_subsections:function(section){
+        var subs= []
+        for(var prop in section){
+            if(prop == "title" || prop=="desc") continue
+            var subsection= section[prop]
+            subsection.id= prop
+            subs.push(subsection)
+        }
+        return subs
+    },
+    get_subsection_data: function(subsec){
+        var ret= {}
+        ret.title= subsec.title || ""
+        ret.desc= subsec.desc || ""
+        ret.id= subsec.id || ""
+        ret.links= []
+        if(subsec.links && subsec.links.length){
+            var size= subsec.links.length
+            for(var i=0; i<size; ++i){
+                var curr_link= subsec.links[i]
+                var clink= {}
+                clink.title= 0 in curr_link ? curr_link[0] :""
+                clink.desc= 1 in curr_link ? curr_link[1] :""
+                clink.url= 2 in curr_link ? curr_link[2] :""
+                ret.links.push(clink)
+            }
+        }
+        return ret
+    }
+}
+        </script> 
+    </head>
+    <body>
+        <div id="header">
+            <div id="menu_button" onclick="UI.animate_sidenav(); this.classList.toggle('pressed')">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="title">PROGRAMMING RESOURCES</div>
+        </div>
+        <div id="page">
+            <ul id="sidenav">
+            </ul>
+            <div id="contents">            
+            </div>
+        </div>
+    </body>
+</html>
